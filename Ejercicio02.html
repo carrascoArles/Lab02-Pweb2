@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>A demonstration of how to access a Number field</h3>
+
+<input type="text" id="myText" >
+
+<p>Click the button to get the number of the number field.</p>
+
+<button onclick="invertirCadena()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function invertirCadena() {
+   var cad = document.getElementById("myText").value;
+  
+    var nuevaCadena = "";
+    for (var i = cad.length - 1; i >= 0; i--) {
+        nuevaCadena += cad[i];
+    }
+
+    document.getElementById("demo").innerHTML = nuevaCadena;
+}
+
+</script>
+
+</body>
+</html>
