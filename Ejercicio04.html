@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Quitar los guiones a un url de meet</h3>
+
+<input type="text" id="myText" >
+
+
+
+<button onclick="invertirCadena()">Try it</button>
+
+<p>El codigo sin guiones es : </p>
+
+<p id="demo"></p>
+
+<script>
+function invertirCadena() {
+   var cad = document.getElementById("myText").value;
+   
+   var i=0;
+   i= cad.lastIndexOf("/");
+   
+    var nuevaCadena = "";
+    var novaCad = "";
+    
+    nuevaCadena = cad.substring(i+1,cad.length);
+    
+    for (var i = 0; i < nuevaCadena.length ; i++) {
+        if(nuevaCadena[i]!="-"){
+        novaCad += nuevaCadena[i];
+        }
+    }
+    
+    document.getElementById("demo").innerHTML = novaCad;
+}
+
+</script>
+
+</body>
+</html>
