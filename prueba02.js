@@ -1,16 +1,16 @@
 
-function votoContados(votos){
-	    let contodos=Array(n).fill(0)
+function Contador_votos(votos){
+	    let contador=Array(n).fill(0)
 	    for(idx in votos){
-		            contodos[votos[idx]]++
+		            contador[votos[idx]]++
 		        }
 
 	    let maxVotos=0;
-	    let ganador=0;
-	    for (id in contodos){
-		if(contodos[id]>maxVotos){
-	            maxVotos=contodos[id]
-		    ganador=id;
+	    let ganadorID=0;
+	    for (id in contador){
+		if(contador[id]>maxVotos){
+	            maxVotos=contador[id]
+		    ganadorID=id;
                 }
 		        }
 }
