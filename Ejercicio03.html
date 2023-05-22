@@ -3,17 +3,26 @@
 
 <body>
     
-        <h1>El aniversario de arequipa es en :  </h1>
+        <h1>El aniversario de Arequipa es en :  </h1>
         <h1 id="dias"></h1>
 
     <script>
 
-const actual=new Date();
-const arequipa = new Date("2023-08-16");
+const actualf=new Date();
+const arequipaf = new Date("2023-08-16");
 
 //Get time nos devuelve en milisegundos porque lo que 
 //por metodos practicos lo volvemos dias 
 
+const minuto = 1000 * 60;
+const hora = minuto * 60;
+const dia = hora * 24;
+
+var actual= Math.round(actualf.getTime() / dia);
+var arequipa = Math.round(arequipaf.getTime() / dia);
+
+var restante=arequipa-actual;
+document.getElementById("dias").innerHTML=restante+" dias";
 
 
     </script>
