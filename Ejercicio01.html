@@ -10,12 +10,32 @@
 const date=new Date();
 var dia_num=date.getDay();
 
-var day=numeros();
+function numeros(){
+	    
+	    if(dia_num==1){
+		            return "Lunes"
+		        }
+	    else if(dia_num==2){
+		            return "Martes"
+		        }
+	    else if(dia_num==3){
+		            return "Miercoles"
+		        }
+	    else if(dia_num==4){
+		            return "Jueves"
+		        }
+	    else if(dia_num==5){
+		            return "Viernes"
+		        }
+	    else if(dia_num==6){
+		            return "Sabado"
+		        }
+	    else if(dia_num==0){
+		            return "Domingo"
+		        }
+}
 
-
-
-
-
+    document.getElementById("dia_num").innerHTML=numeros()
 
     </script>
 </body>
