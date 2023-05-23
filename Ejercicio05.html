@@ -17,6 +17,19 @@
       const tabla=document.querySelector(".tablaN");
       const formula=document.querySelector("#form");
 
+      formula.addEventListener("submit",celdas)
+      function celdas(){
+      const n=document.querySelector("#text").value
+
+    for(let i=0;i<n;i++){
+        
+        const input=document.createElement('input');
+        input.className = 'tabla';
+        input.type='number';
+        tabla.appendChild(input);
+    }
+}
+
 
     </script>
 </body>
