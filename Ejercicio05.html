@@ -9,8 +9,7 @@
             </form>
         </br>
             <div class="tablaN"></div>
-            <button id="calcular">Calcular</button>
-            <h1 id="suma"></h1>
+            <button id="calcular">Calcular</button><h1 id="total"></h1>
 
     <script>
 
@@ -29,7 +28,15 @@
         tabla.appendChild(input);
     }
 }
-
+   document.getElementById("calcular").addEventListener('click',sumar)
+   function sumar(){
+    var valores=document.getElementsByClassName('tabla');
+    var suma=0;
+    for(let i=0;i<valores.length;i++){
+        suma+=parseInt(valores[i].value);
+    }
+    document.getElementById("total").innerHTML="La suma total : "+suma;
+}
 
     </script>
 </body>
