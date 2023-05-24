@@ -98,6 +98,10 @@
                     Ejercicio 06:<br>
                     Utilice la herramienta flipgrid - https://info.flipgrid.com/ envie un video en el tema "Presentación y ejemplo de JavaScript" ponga aquí los enlaces de sus envíos.
                     <ul>    
+                        <li>
+                            Carrasco Choque Arles Melvin <br>
+                            <a href="https://flip.com/s/3U7VL2LQtmsX">https://flip.com/s/3U7VL2LQtmsX</a>
+                        </li>
                     </ul>
                 </li>
             </ul>
